@@ -12,3 +12,40 @@ print('phpを勉強中です！');
 ## エスケープシーケンス
 1. 非英数字の前に記述する場合で、続く文字が表す特別な意味を取り去る
 2. 非表示文字〔制御コードなど〕を パターン中に目に見える形で記述するための方法
+
+## 算術演算子
+
+```
++ //足し算
+- //引き算
+* //掛け算
+/ //割算
+% //剰余算 (あまりの数)
+```
+
+### 日付を表示
+- dateを使用
+```
+//ローカルの日付/時刻を書式化する
+date ( string $format , int|null $timestamp = null ) : string
+
+// format 引数で表示される内容が変わる
+d 日, 01〜31 
+D 曜日、３文字 Mon,Friなど
+l 曜日、Monday
+s 秒数, 00~59
+たくさんある
+```
+
+#### タイムゾーンの変更の仕方
+MANP/bin/php/phpのバージョン/conf/php.ini
+```
+[Date]
+; Defines the default timezone used by the date functions
+; http://php.net/date.timezone
+date.timezone = "Asia/Tokyo"
+```
+- date.timezone = "Asia/Tokyo"のところがヨーロッパの時間帯になっているので上記に修正
+MANPの場合は;を消さないと反映されない
+
+
