@@ -56,5 +56,15 @@ date_default_timezone_set('Asia/Tokyo');
 print(date('G時 i分 s秒'));
 ?>
 ```
+画面に表示するにはechoかprintで組み合わせる
+dateは時間は取得するけど、文字は出力できないため
+
+- 文字列を入れる場合
+```
+<?php
+print("現在は".date(G時1分s秒)."です");
+?>
+```
+- .で連結することで表示される
 
 
