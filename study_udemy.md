@@ -48,4 +48,13 @@ date.timezone = "Asia/Tokyo"
 - date.timezone = "Asia/Tokyo"のところがヨーロッパの時間帯になっているので上記に修正
 MANPの場合は;を消さないと反映されない
 
+- dateメソッドで使用
+```
+
+<?php
+date_default_timezone_set('Asia/Tokyo');
+print(date('G時 i分 s秒'));
+?>
+```
+
 
