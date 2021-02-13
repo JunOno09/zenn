@@ -88,6 +88,7 @@ a <=b aはb以上か（１<=１の場合ture)
 a > b aはbより小さいか
 a >= b a以下か (1 >= 1の場合ture)
 a != b aはbと異なるか
+!a aではない
 ```
 - rubyに似ているので、記述だけ理解する
 - bool型(ture/falseの２択)
