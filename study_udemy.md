@@ -143,14 +143,14 @@ $i--; デクリメント(decrement=減算)
 ```
 
 ## 1年のカレンダーを表示させるプログラム
-- dateメソッド
+### dateメソッド
 ```
 <?php 
 print(date('n/j(D)));
 ?>
 // 2/14(Sun)と表示される（作成日）
 ```
-- timestump（デフォルト）
+### timestump（デフォルト）
 ```
 print(time());
 //1613308334と表示
@@ -164,6 +164,19 @@ print(date('n/j'(D),time( + 60 * 60 * 24)));
 // 2/15(Mon)と表示される
 // 今日の日付に 60秒*60分*24時間をかけることで明日を表示する
 ```
+
+### strtotimeファンクション
+- string to timestumpの略、記述されたtimestumpを表示する
+```
+print(strtime('1990/03/09'));
+// 636908400と表示(自分の誕生日）
+
+print(date('n/j'(D),strtotime(+'2day')));
+// 2/16(Tue)と表示
+
+```
+
+
 
 
 
