@@ -176,6 +176,26 @@ print(date('n/j'(D),strtotime(+'2day')));
 
 ```
 
+- for文を活用した記述
+```
+<?php
+
+for($i=1; $i<=365; $i++){
+  print(date('n/j(D)',strtotime('+'.$i.'day')));
+  print"\n";
+}
+?>
+```
+- 上記をリファクタリング
+```
+<?php
+for($i=1;$i<=365; $i++){
+  $date= strtotime('+'.$i.'day');
+  print(date('n/j(D)',$date));
+  print"\n";
+}
+?>
+
 
 
 
