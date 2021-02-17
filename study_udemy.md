@@ -195,6 +195,21 @@ for($i=1;$i<=365; $i++){
   print"\n";
 }
 ?>
+```
+- :とendfor; :とendwhile;
+```
+<?php
+for($i=1;$i<=365; $i++):
+  $date= strtotime('+'.$i.'day');
+  print(date('n/j(D)',$date));
+  print"\n";
+endfor;
+?>
+
+//{}の代わりに:とendfor;で囲う（for分の場合,
+while文であれば,:とforwhile;になる
+```
+
 
 
 
