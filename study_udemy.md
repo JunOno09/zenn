@@ -241,9 +241,41 @@ print($fruits['grape']);
 //ぶどうと表示される
 //appleの部分がindex,りんごの部分が値
 ```
-
-
 ?>
+
+### foreach
+- 配列を反復処理するのに便利,配列とオブジェクトのみ使用可能
+
+1. foreach (iterable_expression as $value)
+```
+$fruits = [
+  'apple'=> 'りんご',
+  'grape'=> 'ぶどう',
+  'lemon'=> 'レモン',
+];
+
+foreach($fruits as $valuse) {
+  print($valuse."\n");
+};
+//りんご　ぶどう　レモンと表示
+```
+
+2. foreach (iterable_expression as $key => $value)
+```
+$fruits = [
+  'apple'=> 'りんご',
+  'grape'=> 'ぶどう',
+  'lemon'=> 'レモン',
+];
+
+foreach($fruits as $key => $value){
+  print($key.":".$value);
+};
+// apple:りんごgrape:ぶどうlemon:レモンと表示
+// keyとvalueの部分は自分で命名できる
+```
+
+
 
 
 
