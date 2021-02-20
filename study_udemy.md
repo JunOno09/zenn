@@ -276,6 +276,32 @@ foreach($fruits as $key => $value){
 ```
 
 
+## if文
+- 文字列の条件
+```
+$s = 'あいうえお';
+if($s) {
+  print('sはからではありません');
+} else {
+  print(sはからです);
+}
+
+// 文字列 変数に中身があればture,空ならfalse
+```
+
+- 数字の条件
+```
+$s = 0;
+if($s) {
+  print('sは0ではありません');
+} else {
+  print('sは0です');
+}
+// 数字は 0以上はture,0はfalse
+```
+
+
+
 
 
 
