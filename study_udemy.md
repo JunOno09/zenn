@@ -349,6 +349,46 @@ print($date);
 
 ### ファイルの読み込み・書き込み
 
+#### ファイルの書き込み,file_put_contensを使用
+```
+<?php
+$success = file_put_contents('../../news_data/news.txt','2021-02-21 HPをリニューアルしたよ');
+if ($success){
+  print('成功');
+} else {
+  print('失敗');
+}
+?>
+```
+- 上記の場合だと変数successにプログラムを入れる、new_dataディレクトリにnews.txtを作成し,文を記述するところまで
+
+#### ファイルの読み込み file_get_contensを使用
+```
+$news = file_get_contents('../../news_data/news.txt');
+print($news);
+```
+- 変数newsにプログラムを入れる、その変数をprintで記述する
+
+####  readfileで読み込み
+```
+ readfile('../../news_data/news.txt');
+ ```
+ - 中身を確認するだけならば, readfileが便利、読み込む中身が変わるならば,file_get_contensで変数を代入したほうが良さそう
+
+ ### ファイルに内容を追記する
+
+ ```
+ <?php
+  $news = file_get_contents('../../news_data/news.txt');
+  $news .= '2021-02-24 ニュースを追記';
+  file_put_contents('../../news_data/news.txt',$news);
+  print($news);
+ 
+ // .=は文字列連結、+=みたいなイメージ
+ ?>
+
+
+
 
 
 
