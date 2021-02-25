@@ -304,6 +304,8 @@ html 5
 # なんか出てくる
 ```
 
+### gem
+- buluma rails cssを手軽にできる　便利そう
 
 
 
