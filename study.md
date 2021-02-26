@@ -307,6 +307,7 @@ html 5
 ### gem
 - buluma rails cssを手軽にできる　便利そう
 
+https://github.com/joshuajansen/bulma-rails
 
 
 
