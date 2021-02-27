@@ -392,6 +392,20 @@ print($news);
  ?>
 
 ```
+## XMLの情報を読み込む
+### XML
+- 拡張できるマークアップ言語(HTMLの親分みたいらしい)
+```
+<?php
+$xmlTree = simplexml_load_file('https://h2o-space.com/feed/');
+foreach ($xmlTree->channel->item as $item):
+?>
+・<a href="<?php print($item->link); ?>"><?php print($item->title); ?></a>
+<?php endforeach; ?>
+?>
+
+
+
 
 
 
