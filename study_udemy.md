@@ -403,9 +403,11 @@ foreach ($xmlTree->channel->item as $item):
 ・<a href="<?php print($item->link); ?>"><?php print($item->title); ?></a>
 <?php endforeach; ?>
 ?>
+```
 
-
-
+##  JSONの読み込み
+- Javascript object notation (javascriptのオブジェクトの表記法)
+- 記述量が少ない
 
 
 
