@@ -406,8 +406,12 @@ foreach ($xmlTree->channel->item as $item):
 ```
 
 ##  JSONの読み込み
-- Javascript object notation (javascriptのオブジェクトの表記法)
-- 記述量が少ない
+- Javascript object notation (javascriptのオブジェクトとして使える表記法)
+- 記述量が少ない（XMLはタグでくぐるがJSONは:のため）
+- 各データの中身が見える
+
+### json_decode
+- JSON文字列をデコードする
 
 
 
