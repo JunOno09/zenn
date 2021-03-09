@@ -427,6 +427,7 @@ endforeach;
 
 ## フォームから入力した内容を取得する
 ### フォームを作成
+- ディレクトリ内にindex.htmlを作成
 ```
 <form action="submit.php" method="get">
   <label for="my_name">お名前：</label>
