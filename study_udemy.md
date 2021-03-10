@@ -436,6 +436,8 @@ endforeach;
 </form>
 ```
 
+## HTTPメソッド　GET POST
+
 
 
 
