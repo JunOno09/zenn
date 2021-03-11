@@ -437,6 +437,7 @@ endforeach;
 ```
 
 ## HTTPメソッド　GET POST
+- ディレクトリ内にsubmit.phpを作成
 
 
 
