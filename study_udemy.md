@@ -442,6 +442,11 @@ endforeach;
 ```
 print(html_specialchars($_REQUEST['my_name'],ENT_QUOUTE));
 ```
+- ['my_name']でフォーム属性を指定
+- htmlspecialcharsを使用することで、htmlをエンティティする（セキュリティ）
+1. １つ目のファンクションで何を、２つ目のファンクションでどのように
+2. 基本的には第２パラメータはENT_QUOTEを使用
+
 
 
 
