@@ -439,6 +439,12 @@ endforeach;
 ## HTTPメソッド　GET POST
 - ディレクトリ内にsubmit.phpを作成
 
+```
+print(html_specialchars($_REQUEST['my_name'],ENT_QUOUTE));
+```
+
+
+
 
 
 
