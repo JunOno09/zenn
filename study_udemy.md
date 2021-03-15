@@ -446,7 +446,33 @@ print(html_specialchars($_REQUEST['my_name'],ENT_QUOUTE));
 - htmlspecialcharsを使用することで、htmlをエンティティする（セキュリティ）
 1. １つ目のファンクションで何を、２つ目のファンクションでどのように
 2. 基本的には第２パラメータはENT_QUOTEを使用
-3. $_REQUESTはhtmlのフォーム属性がGETでもPOSTでも受け取れる
+3. $_REQUESTはhtmlのフォーム属性がGETでもPOSTでも受け取れる、しかしPOSTで送るべき内容（パスワード）もGETに乗せて送られるため、属性がわかっている場合は合わせる
+
+### radio,チェックボックス
+- textフィールドと違ってvalue属性のデータが送られる
+```
+#index.html  
+<form action="submit.php" method="POST">
+  <p>
+    性別：
+    <input type="radio" name="gender" value="male">男性
+    ／
+    <input type="radio" name="gender" value="female">女性
+  </p>
+  <input type="submit" value="送信する">
+</form>
+```
+
+```
+#submit.php
+<?php print(htmlspecialchars($_POST["gender"],ENT_QUOTES)); ?>
+```
+
+- 上記の場合,男性を指定したらmale,女性を選択したらfemaleが表示される
+
+
+
+
 
 
 
