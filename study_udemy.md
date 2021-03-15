@@ -470,6 +470,8 @@ print(html_specialchars($_REQUEST['my_name'],ENT_QUOUTE));
 
 - 上記の場合,男性を指定したらmale,女性を選択したらfemaleが表示される
 
+## 複数選択可能なチェックボックス、リストボックスの値を取得
+
 
 
 
