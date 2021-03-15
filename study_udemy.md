@@ -446,6 +446,7 @@ print(html_specialchars($_REQUEST['my_name'],ENT_QUOUTE));
 - htmlspecialcharsを使用することで、htmlをエンティティする（セキュリティ）
 1. １つ目のファンクションで何を、２つ目のファンクションでどのように
 2. 基本的には第２パラメータはENT_QUOTEを使用
+3. $_REQUESTはhtmlのフォーム属性がGETでもPOSTでも受け取れる
 
 
 
