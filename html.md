@@ -12,5 +12,26 @@
 2. type="reset" …… フォーム入力内容をリセットするリセットボタン
 3. type="button" …… 何もしない汎用的な押しボタン
 
+## HTMLの宣言
+```
+<!DOCTYPE html>
+```
+- 上記でHTML5の宣言になる
+```
+<html>
+  <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width">
+     <title>タイトル</title>
+  </head>
+    <body>
+      本文
+    </body>
+</html>
+```
+- headタグのmetaは文字のコード（文字化けしないように使う）
+- viewportで端末の幅を指定
+
+
 
 
