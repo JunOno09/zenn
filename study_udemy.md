@@ -472,6 +472,29 @@ print(html_specialchars($_REQUEST['my_name'],ENT_QUOUTE));
 
 ## 複数選択可能なチェックボックス、リストボックスの値を取得.
 
+### olタグ
+- リストを数字で表す
+- 必ずliタグを中に入れる
+```
+<ol>
+<li>なになに</li>
+<ol>
+```
+
+### clearfix
+- floatで浮いた背景をもとに戻す
+```
+clearfix::after{
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+```
+
+
+
+
 
 
 
