@@ -492,6 +492,35 @@ clearfix::after{
 
 ```
 
+# aタグ
+- リンク先を指定できる
+- taget属性で blankを指定するとタブが増える
+```
+<a href="~" taget="blank">
+```
+
+## text-decoration
+- noneで下線を消せる
+
+# 実体参照
+- コピーライト
+```
+&copy;  
+```
+
+
+## レスポンシブデザイン
+
+<!-- display blockでインライン要素でもブロック要素にできる
+
+##> -->
+
+## リンクをかざすと色が変わる
+```
+~:hover {
+  opacity: .5;
+}
+
 
 
 
